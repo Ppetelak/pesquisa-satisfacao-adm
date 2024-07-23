@@ -1,0 +1,164 @@
+:root{
+    --amarelo: #BE7512;
+    --azul: #0E3178;
+    --color-text: #7a7a7a;
+}
+
+.container {
+  margin: auto;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    width: 30%;
+    margin: auto;
+    background-image: url(https://mounthermon.com.br/pesquisa-de-satisfacao/img/background.png);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 2rem;
+}
+.logo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+img{
+    width: 190px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--azul);
+}
+
+h3 span{
+    color: var(--amarelo);
+}
+
+h2, p{
+    font-weight: 300;
+    color: var(--color-text);
+    font-size: 14px;
+}
+.container{
+    justify-content: space-between;
+}
+.form-group{
+    margin-top: 30px;
+}
+span{
+    color: var(--amarelo);
+    font-weight: 500;
+    font-size: 14px;
+}
+.pergunta{
+    font-weight: 500;
+}
+
+label, input{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+select option{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+input[type="radio"]{
+    border: 1px solid var(--azul) 
+}
+
+input[type="radio"]:checked {
+    background-color: var(--amarelo);
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.cabecalho p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.atencao{
+    font-weight: 500;
+    color: red;
+}
+
+.btn-primary{
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--amarelo);
+    font-family: 'Kanit', sans-serif;
+    border-color: var(--amarelo);
+}
+
+.btn-primary:hover{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: var(--azul);
+    font-family: 'Kanit', sans-serif;
+    border-color: var(--azul);
+}
+
+.obrigado p{
+    font-weight: 300;
+    text-align: center;
+    color: var(--azul);
+}
+
+.erro p{
+    font-weight: 500;
+    text-align: center;
+    color:red;
+}
+
+.inline-error p{
+    font-weight: 500;
+    text-align: center;
+    color: darkorange;
+}
+
+.titulo {
+    color: var(--azul);
+    font-weight: 400;
+}
+
+.aguarde{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aguarde p{
+    background: var(--azul);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    width: fit-content;
+
+}
+
+
+
+@media (max-width: 600px) {
+    body{
+        width: 90%;
+        background-image: url(/img/background.png);
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: 25px;
+    }
+    
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mount Hermon - Pesquisa</title>
+  <link rel="icon" href="img/faviconV2_mounthermon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="cabecalho">
+      <div class="logo">
+        <img src="https://mounthermon.com.br/wp-content/uploads/2021/09/mounthermon-logo.png" alt="logo mount hermon">
+        <h3> Mount Hermon » <span> Pesquisa de satisfação</span> </h3>
+      </div>
+      <h2>Sr. beneficiário,</h2>
+      <p>Obrigado por confiar na Mount Hermon para escolher o seu Plano de Saúde! Gostaríamos de saber como foi a sua
+        experiência durante a adesão, justamente para que possamos melhorar ainda mais com o passar do tempo! É rápido e
+        essencial para nós!
+      </p>
+    </div>
+
+    <form id="formulario">
+      <!-- <div class="form-group">
+        <label class="pergunta"><span>01 - </span>Qual seu gênero?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="q1-1" value="Masculino" required>
+          <label class="form-check-label" for="q1-1">Masculino</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="q1-2" value="Feminino">
+          <label class="form-check-label" for="q1-2">Feminino</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="q1-3" value="Outro">
+          <label class="form-check-label" for="q1-3">Outro</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="pergunta"><span>02 - </span>Qual sua faixa etária?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-1" value="18-25" required>
+          <label class="form-check-label" for="q2-1">18 - 25</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-2" value="26-30">
+          <label class="form-check-label" for="q2-2">26-30</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-3" value="31-35">
+          <label class="form-check-label" for="q2-3">31 - 35</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-4" value="36-40">
+          <label class="form-check-label" for="q2-4">36 - 40</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-5" value="41-45">
+          <label class="form-check-label" for="q2-5">41 - 45</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-6" value="46-50">
+          <label class="form-check-label" for="q2-6">46 - 50</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-7" value="51-55">
+          <label class="form-check-label" for="q2-7">51 - 55</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2-8" value="56 ou mais">
+          <label class="form-check-label" for="q2-8">56 ou mais</label>
+        </div>
+      </div> -->
+
+      <div class="form-group">
+        <label class="pergunta"><span>01 - </span>Você mora em qual estado Brasileiro? </label>
+        <select class="form-control" id="q3" name="q3">
+          <option value="" disabled selected>Selecione um estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="titulo">Agora em uma escala entre <br> <span class="green"> 5 (positivo)</span> e <span
+            class="red">0 (Negativo)</span>, <br> por gentileza de a sua opinião sobre os seguintes aspectos:</label>
+      </div>
+      <div class="form-group">
+        <label class="pergunta"><span>02 - </span>Qual a sua opinião sobre o corretor que lhe atendeu?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4-1" value="5" required>
+          <label class="form-check-label" for="q4-1">5</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4-2" value="4">
+          <label class="form-check-label" for="q4-2">4</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4-3" value="3">
+          <label class="form-check-label" for="q4-3">3</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4-4" value="2">
+          <label class="form-check-label" for="q4-4">2</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4-5" value="1">
+          <label class="form-check-label" for="q4-5">1</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="pergunta"><span>03 - </span>Qual a sua opinião sobre a diversidade dos Planos que temos a lhe
+          oferecer?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5-1" value="5" required>
+          <label class="form-check-label" for="q5-1">5</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5-2" value="4">
+          <label class="form-check-label" for="q5-2">4</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5-3" value="3">
+          <label class="form-check-label" for="q5-3">3</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5-4" value="2">
+          <label class="form-check-label" for="q5-4">2</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5-5" value="1">
+          <label class="form-check-label" for="q5-5">1</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="pergunta"><span>04 - </span>Quanto você recomendaria a Mount Hermon para um amigo ou familiar?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q6" id="q6-1" value="5" required>
+          <label class="form-check-label" for="q6-1">5</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q6" id="q6-2" value="4">
+          <label class="form-check-label" for="q6-2">4</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q6" id="q5-3" value="3">
+          <label class="form-check-label" for="q6-3">3</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q6" id="q6-4" value="2">
+          <label class="form-check-label" for="q6-4">2</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q6" id="q6-5" value="1">
+          <label class="form-check-label" for="q6-5">1</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="pergunta"><span>05 - </span>Quanto você está satisfeito com o produto que adquiriu?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q7" id="q7-1" value="5" required>
+          <label class="form-check-label" for="q7-1">5</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q7" id="q7-2" value="4">
+          <label class="form-check-label" for="q7-2">4</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q7" id="q7-3" value="3">
+          <label class="form-check-label" for="q7-3">3</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q7" id="q7-4" value="2">
+          <label class="form-check-label" for="q7-4">2</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q7" id="q7-5" value="1">
+          <label class="form-check-label" for="q7-5">1</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+    <label class="pergunta"><span>06 - </span>Gostaria de escrever algo a mais sobre sua experiência conosco até aqui?Esperamos que sim! Pois a sua avaliação é muito importante.</label>
+		<textarea class="form-control" name="q8" id="q8" rows="3"></textarea>
+		<span class="contadorCaracteres text-muted" id="contador1">0/250</span>        
+</div>
+      
+      <div class="form-group">
+        <div class="aguarde d-none" id="aguarde">
+          <p> Enviando ... Aguarde</p>
+        </div>
+        <button type="submit" class="btn btn-primary" id="enviarPesquisa">Enviar</button>
+      </div>
+    </form>
+    <div class="mensagens">
+      <div class="obrigado d-none" id="obrigado">
+        <p>
+          Formulário enviado com SUCESSO! Muito obrigado, você será redirecionado em 2 segundos!
+        </p>
+      </div>
+      <div class="erro d-none" id="erro">
+        <p>
+          Ops, houve um ERRO! Pedimos por gentileza que tente mais uma vez!
+        </p>
+      </div>
+      <div class="inline-error d-none" id="inline-error">
+        <p>
+          Faltou o preenchimento de algum campo, verifique os campos e tente novamente!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
